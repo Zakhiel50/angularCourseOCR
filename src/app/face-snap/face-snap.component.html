@@ -1,15 +1,15 @@
 <div class="face-snap-card">
     <div class="img-container">
-        <img [src]="imgUrl" [alt]="title">
+        <img [src]="FaceSnap.imgUrl" [alt]="FaceSnap.title">
     </div>
 
     <section class="content-container">
-        <h2>{{ title }}</h2>
-        <p>Mis en ligne le {{ createdDate }}</p>
-        <p>{{ description }}</p>
+        <h2>{{ FaceSnap.title }}</h2>
+        <p>Mis en ligne le {{ FaceSnap.createdDate }}</p>
+        <p>{{ FaceSnap.description }}</p>
         <p>
             <button class="addRmvSnap" (click)="onAddOrRemoveSnap()">{{btnContent}}</button>
-            🤌 {{ snaps }}
+            🤌 {{ FaceSnap.snaps }}
         </p>
     </section>
   </div>
