@@ -7,6 +7,9 @@
         <h2>{{ title }}</h2>
         <p>Mis en ligne le {{ createdDate }}</p>
         <p>{{ description }}</p>
-        <p>🤌 {{ snaps }}</p>
+        <p>
+            <button class="addRmvSnap" (click)="onAddOrRemoveSnap()">{{btnContent}}</button>
+            🤌 {{ snaps }}
+        </p>
     </section>
   </div>
