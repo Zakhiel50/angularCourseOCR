@@ -8,7 +8,7 @@ import { FaceSnap } from './face-snap/models/face-snap.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  
+
   faceSnaps! : FaceSnap[];
   
   ngOnInit() {
@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
         description: "It's me, Okay !? 🤪.",
         imgUrl: "https://media.licdn.com/dms/image/D4E03AQHEts4hMpHr6A/profile-displayphoto-shrink_800_800/0/1683886850340?e=2147483647&v=beta&t=QMCmuBueDbOSpUTfCAfqOv-BEVBsDNjEXSRjNzXHcCo",
         createdDate: new Date(),
-        snaps: 0,
+        snaps: 120,
         location: "Le grand-Celland"
       },
       {
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
         description: "Coin-coin, i'm a duck 🦆",
         imgUrl: "https://images.pexels.com/photos/16725752/pexels-photo-16725752/free-photo-of-oiseau-animal-longue-exposition-faune.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         createdDate: new Date(),
-        snaps: 0,
+        snaps: 355,
         location: "Brecey"
       },
       {
