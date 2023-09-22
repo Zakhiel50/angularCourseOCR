@@ -1,5 +1,2 @@
-<section class="container-cards">
-    <app-face-snap [FaceSnap]="mySnap"></app-face-snap>
-    <app-face-snap [FaceSnap]="myOtherSnap"></app-face-snap>
-    <app-face-snap [FaceSnap]="myLastSnap"></app-face-snap>
-</section>
+
+    <app-face-snap *ngFor="let faceSnapElement of faceSnaps" [faceSnap]="faceSnapElement"></app-face-snap>

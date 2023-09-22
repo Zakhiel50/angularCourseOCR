@@ -1,16 +1,16 @@
 <div class="face-snap-card">
     <div class="img-container">
-        <img [src]="FaceSnap.imgUrl" [alt]="FaceSnap.title">
+        <img [src]="faceSnap.imgUrl" [alt]="faceSnap.title">
     </div>
 
     <section class="content-container">
-        <h2>{{ FaceSnap.title }}</h2>
-        <p>Mis en ligne le {{ FaceSnap.createdDate }}</p>
-        <p>{{ FaceSnap.description }}</p>
-        <p *ngIf="FaceSnap.location">Cette photo à été prise à {{FaceSnap.location}}</p>
+        <h2>{{ faceSnap.title }}</h2>
+        <p>Mis en ligne le {{ faceSnap.createdDate }}</p>
+        <p>{{ faceSnap.description }}</p>
+        <p *ngIf="faceSnap.location">Cette photo à été prise à {{faceSnap.location}}</p>
         <p>
             <button class="addRmvSnap" (click)="onAddOrRemoveSnap()">{{btnContent}}</button>
-            🤌 {{ FaceSnap.snaps }}
+            🤌 {{ faceSnap.snaps }}
         </p>
     </section>
   </div>

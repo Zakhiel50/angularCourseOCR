@@ -7,7 +7,7 @@ import { FaceSnap } from './models/face-snap.model';
   styleUrls: ['./face-snap.component.scss']
 })
 export class FaceSnapComponent implements OnInit {
-  @Input() FaceSnap! : FaceSnap;
+  @Input() faceSnap! : FaceSnap;
 
   title! : string;
   description! : string;
@@ -26,12 +26,12 @@ export class FaceSnapComponent implements OnInit {
   onAddOrRemoveSnap() {
     if (this.snapped === false) {
       this.snapped = true 
-      this.FaceSnap.snaps++;
+      this.faceSnap.snaps++;
       this.btnContent = "Oops unsnap !"  
     }
     else {
       this.snapped = false;
-      this.FaceSnap.snaps--
+      this.faceSnap.snaps--
       this.btnContent = "Oh Snap !"
     }
   }
