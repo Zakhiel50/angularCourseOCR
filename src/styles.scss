@@ -4,24 +4,17 @@
   
 .face-snap-card {
     display: flex;
+    flex-wrap: wrap;
     align-items: space-between;
+    box-sizing: border-box;
     border-radius: 10px;
     box-shadow: 8px 8px 13px 1px rgba(0, 0, 0, 0.1);;
-    width: 700px;
-    height: 300px;
-    margin: 10px;
+    width: 80%;
+    margin: 10px auto;
 
-    .img-container {
-        width: 40%;
-        height: 100%;
-        border-radius: 10px 0 0 10px;
-        img {
-            border-radius: 10px 0 0 10px;
-            height: 100%;
-            width: 300px;
-          }
-    }
-
+    img {
+    width: 100%;
+}
     .content-container {
         width: 90%;
         height: 100%;
@@ -41,6 +34,9 @@
         border-radius: 4px;
         padding: 10px 0;
         align-items: baseline;
+        &:active {
+            transform: translate(1px, 1px);
+        }
     }
     
 }
@@ -50,14 +46,36 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    app-face-snap {
-        flex: 1;
+}
+
+@media screen and (min-width: 700px) {
+    .face-snap-card {
+        display: flex;
+        justify-content: center;
+        margin: 30px auto;
     }
-    app-face-snap:last-child {
-        order: 1;
+    img {
+        max-width: 300px;
+        margin-left: 0;
+    }
+
+    .content-container {
+        max-width: 600px;
     }
 }
 
-@media screen and (min-width: 1400px) {
-    
+@media screen and (min-width: 1140px) {
+    .face-snap-card {
+        display: flex;
+        justify-content: start;
+        margin: 30px auto;
+    }
+    img {
+        max-width: 300px;
+        margin-left: 0;
+    }
+
+    .content-container {
+        max-width: 600px;
+    }
 }
