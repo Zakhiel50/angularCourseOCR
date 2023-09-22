@@ -9,7 +9,7 @@
         <p>{{ faceSnap.description }}</p>
         <p *ngIf="faceSnap.location">Cette photo à été prise à {{faceSnap.location}}</p>
         <p>
-            <button class="addRmvSnap" (click)="onAddOrRemoveSnap()">{{btnContent}}</button>
+            <button class="addRmvSnap" [ngClass]="{snapped: btnContent === 'Oops unsnap !'}" (click)="onAddOrRemoveSnap()">{{btnContent}}</button>
             🤌
             <span [ngStyle]="{ color: 'rgb(0, ' + faceSnap.snaps + ' , 0)' }"> {{ faceSnap.snaps }}</span>
             <span *ngIf="faceSnap.snaps >= 255" [ngStyle]="{borderBottom: '1px solid orange'}">🔥</span>
