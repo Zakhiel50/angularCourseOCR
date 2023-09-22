@@ -48,4 +48,16 @@
 .container-cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+
+    app-face-snap {
+        flex: 1;
+    }
+    app-face-snap:last-child {
+        order: 1;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    
 }
