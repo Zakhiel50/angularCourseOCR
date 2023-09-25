@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
         description: "It's me, Okay !? 🤪.",
         imgUrl: "https://media.licdn.com/dms/image/D4E03AQHEts4hMpHr6A/profile-displayphoto-shrink_800_800/0/1683886850340?e=2147483647&v=beta&t=QMCmuBueDbOSpUTfCAfqOv-BEVBsDNjEXSRjNzXHcCo",
         createdDate: new Date(),
-        snaps: 120,
+        snaps: 12562,
         location: "Le grand-Celland"
       },
       {
