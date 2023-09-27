@@ -25,7 +25,7 @@ export class faceSnapsService{
           description: "Coin-coin, i'm a duck 🦆",
           imgUrl: "https://images.pexels.com/photos/16725752/pexels-photo-16725752/free-photo-of-oiseau-animal-longue-exposition-faune.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
           createdDate: new Date(),
-          snaps: 355,
+          snaps: 254,
           location: "Brecey"
         },
         {
@@ -34,7 +34,7 @@ export class faceSnapsService{
           description: "Beyond the clouds",
           imgUrl: "https://ecodev.ch/wp-content/uploads/2019/06/joshua-earle-12689-unsplash.jpg",
           createdDate: new Date(),
-          snaps: 0,
+          snaps: 90,
         }
       ];
 
